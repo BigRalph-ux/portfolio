@@ -5,35 +5,152 @@
   <title>Raphael's Portfolio</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <style>
-    body { font-family: Arial, sans-serif; margin: 0; padding: 0; background: #f4f4f4; }
-    header { background: #222; color: #fff; padding: 40px 20px; text-align: center; }
-    section { padding: 40px 20px; }
-    .projects img { width: 100%; max-width: 300px; margin: 10px; }
-    footer { background: #222; color: #fff; text-align: center; padding: 20px; }
+    html {
+      scroll-behavior: smooth;
+    }
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(to right, #625595, #bcb2ee);
+      color: #fff;
+    }
+    nav {
+      background: rgba(0, 0, 0, 0.8);
+      padding: 20px 0;
+      text-align: center;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      margin: 0 20px;
+      font-weight: bold;
+      font-size: 18px;
+      transition: color 0.3s;
+    }
+    nav a:hover {
+      color: #a84be7;
+    }
+    header, footer {
+      background: rgba(0, 0, 0, 0.6);
+      text-align: center;
+      padding: 60px 20px;
+    }
+    section {
+      padding: 40px 20px;
+      max-width: 800px;
+      margin: auto;
+    }
+    h1, h2 {
+      font-weight: 600;
+    }
+    .projects img {
+      width: 100%;
+      max-width: 300px;
+      margin: 10px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.3);
+    }
+    .contact-form input,
+    .contact-form textarea {
+      width: 100%;
+      padding: 10px;
+      margin: 8px 0;
+      border-radius: 4px;
+      border: none;
+    }
+    .contact-form button {
+      padding: 10px 20px;
+      border-radius: 4px;
+      border: none;
+      background: #928dab;
+      color: #fff;
+      font-weight: bold;
+      cursor: pointer;
+    }
   </style>
 </head>
 <body>
 
-<header>
-  <h1>Raphael</h1>
-  <p>Creative Developer & Designer</p>
+<nav>
+  <a href="#home">Home</a>
+  <a href="#about">About Me</a>
+  <a href="#projects">Projects</a>
+  <a href="#contact">Contact</a>
+</nav>
+
+<header id="home">
+  <h1>Raphael Siaka</h1>
+  <p>Creative UI/UX Designer & Developer</p>
+  <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=800&q=80" alt="Tech UI/UX" style="max-width:400px; width:100%; border-radius:16px; margin:30px 0;">
+  <div>
+    <p>
+      Welcome to my portfolio! I specialize in creating seamless digital experiences that blend technology and design. My passion for UI/UX drives me to craft interfaces that are both beautiful and intuitive.
+    </p>
+    <p>
+      Whether it's building responsive websites, designing mobile apps, or solving complex user problems, I bring creativity and precision to every project. Scroll down to discover more about my journey, my work, and how I can help you achieve your digital goals.
+    </p>
+    <p>
+      From concept to launch, I focus on delivering solutions that delight users and drive results. Let’s explore together!
+    </p>
+  </div>
 </header>
 
-<section>
+<section id="about">
   <h2>About Me</h2>
-  <p>I’m a passionate creator based in Lagos, building digital experiences that connect and inspire.</p>
+  <p>
+    Hi, I’m Raphael—a creative developer and designer based in Lagos. My journey began with a curiosity for how things work and a drive to make them better. Over the years, I’ve built a reputation for delivering high-quality digital products that solve real problems.
+  </p>
+  <p>
+    <strong>Successes:</strong> I’ve led teams to launch successful web and mobile applications, collaborated with startups and established brands, and won awards for innovative design. My work has helped businesses grow, improve user engagement, and stand out in competitive markets.
+  </p>
+  <p>
+    <strong>Problem Solving:</strong> I approach challenges with a blend of analytical thinking and creativity. I start by understanding the user’s needs, then break down complex issues into manageable steps. Through research, prototyping, and testing, I find solutions that are both effective and elegant.
+  </p>
+  <p>
+    I believe every problem is an opportunity to learn and innovate. My goal is to create experiences that not only work but inspire.
+  </p>
 </section>
-
-<section class="projects">
+<section id="projects" class="projects">
   <h2>Projects</h2>
-  <img src="project1.jpg" alt="Project 1">
-  <img src="project2.jpg" alt="Project 2">
+  
+  <h3>UI/UX Design Projects</h3>
+  <div>
+    <img src="https://images.unsplash.com/photo-1519125323398-675f0ddb6308?auto=format&fit=crop&w=400&q=80" alt="Mobile App UI Design">
+    <p><strong>Mobile App UI:</strong> Designed a modern, user-friendly interface for a finance app, focusing on accessibility and smooth user flow.</p>
+    <img src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?auto=format&fit=crop&w=400&q=80" alt="Web Dashboard UI">
+    <p><strong>Web Dashboard:</strong> Created an interactive dashboard for a SaaS platform, improving data visualization and user engagement.</p>
+  </div>
+  
+  <h3>Graphic Design Projects</h3>
+  <div>
+    <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=400&q=80" alt="Brand Logo Design">
+    <p><strong>Brand Logo:</strong> Developed a unique logo for a startup, blending minimalism with vibrant colors for strong brand identity.</p>
+    <img src="https://images.unsplash.com/photo-1465101046530-73398c7f28ca?auto=format&fit=crop&w=400&q=80" alt="Event Poster Design">
+    <p><strong>Event Poster:</strong> Designed eye-catching posters for tech events, combining bold typography and creative layouts.</p>
+  </div>
+  
+  <h3>Animation Projects</h3>
+  <div>
+    <img src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?auto=format&fit=crop&w=400&q=80" alt="App Onboarding Animation">
+    <p><strong>App Onboarding Animation:</strong> Produced smooth onboarding animations for a mobile app, enhancing user experience and engagement.</p>
+    <img src="https://images.unsplash.com/photo-1515378791036-0648a3ef77b2?auto=format&fit=crop&w=400&q=80" alt="Logo Animation">
+    <p><strong>Logo Animation:</strong> Animated brand logos for social media campaigns, adding dynamic motion to visual identity.</p>
+  </div>
 </section>
-
-<section>
+<section id="contact">
   <h2>Contact</h2>
-  <p>Email: raphael@example.com</p>
-  <p>Instagram: @raphael_creates</p>
+  <p>Email: siakaraphael61@gmail.com</p>
+  <p>Instagram: @bigralph_7</p>
+  <form class="contact-form" action="https://formspree.io/f/xnnbjoev" method="POST">
+    <input type="text" name="name" placeholder="Your name" required><br>
+    <input type="email" name="email" placeholder="Your email" required><br>
+    <textarea name="message" placeholder="Your message" required></textarea><br>
+    <button type="submit">Send</button>
+  </form>
 </section>
 
 <footer>
